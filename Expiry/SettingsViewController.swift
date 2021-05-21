@@ -7,7 +7,6 @@
 
 import UIKit
 import Parse
-import AlamofireImage
 
 class SettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -55,9 +54,9 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        //let scaledImage = image.af_imageScaled(to: size)
         
-        profilePicture.image = scaledImage
+        //profilePicture.image = scaledImage
         
         dismiss(animated: true, completion: nil)
     }
